@@ -2,21 +2,24 @@
 {
     public class ParandBalancer : IParandBalancer
     {
-        const char openParand = ('(');
-        const char closeParand = (')');
+        const char openParand = '(';
+        const char closeParand = ')';
         int counter = 0;
 
         public bool CheckParands(string input)
         {
-            foreach (var letter in input)
-            {
-                if (letter.Equals(openParand))
+            if (!string.IsNullOrEmpty(input))
+            { 
+                foreach (var letter in input)
                 {
-                    counter++;
-                }
-                if (letter.Equals(closeParand))
-                {
-                    counter--;
+                    if (letter.Equals(openParand))
+                    {
+                        counter++;
+                    }
+                    if (letter.Equals(closeParand))
+                    {
+                        counter--;
+                    }
                 }
             }
 

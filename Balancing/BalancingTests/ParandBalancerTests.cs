@@ -44,7 +44,7 @@ namespace BalancingTests
 
             var result = checkEven.CheckParands(null);
 
-            Assert.AreEqual(result, false);
+            Assert.AreEqual(result, true);
         }
     }
 }
