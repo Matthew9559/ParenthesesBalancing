@@ -1,6 +1,6 @@
 ﻿namespace Balancing
 {
-    class ParandBalancer : IParandBalancer
+    public class ParandBalancer : IParandBalancer
     {
         const char openParand = ('(');
         const char closeParand = (')');
